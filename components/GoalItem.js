@@ -2,11 +2,11 @@ import React from 'react';
 import {View, Text, StyleSheet } from 'react-native';
 
 const GoalItem = props => {
-    return         <View style={styles.listItem}>
-
+    return (        
+    <View style={styles.listItem} onTouchEnd> 
     <Text>{props.title}</Text>
-
-</View>
+    </View>
+    );
 };
 
 const style = StyleSheet.create({  

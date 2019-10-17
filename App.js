@@ -5,7 +5,6 @@ import GoalItem from './components/GoalItem';
 import GoalInput from './components/GoalInput';
 
 export default function App() {
-  const [enteredGoal, setEnteredGoal] = useState('');
   const [courseGoals, setCourseGoals] = useState([]);
 
 
@@ -18,7 +17,7 @@ export default function App() {
     <View style={styles.screen}>
       <GoalInput onAddGoal={addGoalHandler}/>
       <FlatList 
-      keyExtractor={(item, index) => item.id }
+      keyExtractor={(item, index) => item.id }  v
       data={courseGoals}
        renderItem={itemData => <GoalItem title={itemData.item.value}/> } 
       /> 
